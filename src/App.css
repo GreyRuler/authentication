@@ -1,1 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace
+}
 
+.authentication .header-container {
+    background-color: #f5f5f5;
+    padding: 1rem;
+}
+
+.authentication .header-container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login > *, .btn-logout {
+    padding: .5rem;
+    border: 1px solid grey;
+    border-radius: .25rem;
+}
+
+.login > *:not(:last-child), .logout > *:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.login .btn-login {
+    border-color: green;
+    color: green;
+    background-color: inherit;
+}
+
+.login .btn-login:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.login input:focus {
+    outline: 1px solid #777777;
+}
+
+.logout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logout .btn-logout {
+    background-color: inherit;
+    border-color: red;
+    color: red;
+}
+
+.logout .btn-logout:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.logout .avatar {
+    border-radius: 50%;
+}
+
+.news-container {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.news {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+}
+
+.news .news-item {
+    overflow: hidden;
+    width: 400px;
+    border: 1px solid grey;
+    margin-bottom: .5rem;
+}
+
+.news-item .title {
+    margin: 1rem;
+}
+
+.news-item .content {
+    margin: 1rem;
+}
